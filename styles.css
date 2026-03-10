@@ -1,0 +1,14 @@
+html, body { height: 100%; margin: 0; background:#060611; color:#fff; font-family: system-ui, sans-serif; }
+#viz { position: fixed; inset:0; z-index:0; background: radial-gradient(1200px 700px at 80% 10%, rgba(161,51,255,.25), transparent),
+                                      radial-gradient(900px 600px at 10% 80%, rgba(30,200,255,.25), transparent); }
+.hero, .player, .discography, .footer { position: relative; z-index:1; padding: 3rem 1.5rem; }
+.hero { display:flex; align-items:center; min-height: 55vh; }
+.hero__text h1 { font-size: clamp(2.5rem, 6vw, 5rem); margin:0 0 0.5rem; }
+button { border:1px solid rgba(255,255,255,.2); background: rgba(255,255,255,.08); color:#fff; padding:0.6rem 1rem; border-radius:999px; cursor:pointer; }
+.player { display:flex; gap:1.5rem; align-items:center; flex-wrap:wrap; }
+.cover { width: 260px; height: 260px; border-radius: 24px; object-fit: cover; }
+.eq { flex:1; height: 260px; display:flex; align-items:flex-end; gap: 6px; }
+.bar { width: 8px; background: linear-gradient(#1ec8ff, #a133ff); border-radius:8px 8px 0 0; }
+.cards { display:flex; gap:1rem; overflow-x:auto; padding-bottom:1rem; }
+.card { min-width: 240px; padding:1rem; background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.12); border-radius: 20px; cursor:pointer; }
+.footer { display:flex; gap:1rem; justify-content:center; padding-bottom:4rem; }
