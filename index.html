@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Artist Profile</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+</head>
+<body>
+  <canvas id="viz"></canvas>
+  <header class="hero">
+    <div class="hero__text">
+      <h1>Artist Name</h1>
+      <p>פרופיל אמן • אנימציות • חוויה</p>
+      <button id="play">▶︎ Play</button>
+    </div>
+  </header>
+
+  <section class="player">
+    <img class="cover" src="assets/cover.jpg" alt="cover" />
+    <div class="eq" id="eq"></div>
+    <audio id="audio" src="assets/music/track1.mp3" preload="auto"></audio>
+  </section>
+
+  <section class="discography">
+    <h2>Tracks</h2>
+    <div class="cards" id="tracks"></div>
+  </section>
+
+  <footer class="footer">
+    <a href="mailto:you@example.com">Contact</a>
+    <a href="https://instagram.com/your_handle" target="_blank">Instagram</a>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
